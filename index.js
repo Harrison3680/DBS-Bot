@@ -1,8 +1,8 @@
-require('dotenv').config()
+global.config = require("./config.json")
 const Dlang = require('discordbot-script')
 const { processes } = require('systeminformation')
 const bot = new Dlang({
-token: process.env.token,
+token: config.TOKEN,
 prefix: ["F!"]
 })
 
