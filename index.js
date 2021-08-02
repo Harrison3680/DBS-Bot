@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Dlang = require('discordbot-script')
 const { processes } = require('systeminformation')
 const bot = new Dlang({
