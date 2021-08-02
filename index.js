@@ -20,7 +20,7 @@ bot.Status({
         type: "PLAYING" 
     }, 
     1: {
-        description: "porn", 
+        description: "porn with ricky", 
         type: "WATCHING" 
     }
 }, 12000)
