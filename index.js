@@ -162,6 +162,6 @@ bot.Command({
       })
 
       bot.Command({
-      name:"test"
+      name:"test",
 	code:`pressure cook my greasey balls`      
       })
