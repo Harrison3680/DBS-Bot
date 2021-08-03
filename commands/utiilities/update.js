@@ -1,7 +1,8 @@
 module.exports = {
   name:"git-pull"
   code:`$djsEval[const exec = require('child_process').exec;
-    if (message.member.roles.cache.find(r => r.id === "831412883270926387")) {
+exports.run = async (client, message, args) => {
+    if (message.member.roles.cache.find(r => r.id === "778237595477606440")) {
         exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
             if (!error) {
@@ -19,4 +20,5 @@ module.exports = {
     } else {
         message.channel.send('OwO')
     }
-}]` }
+}]`
+  }
