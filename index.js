@@ -1,11 +1,9 @@
 global.config = require("./config.json")
 const Dlang = require('discordbot-script')
-const { processes } = require('systeminformation')
 const bot = new Dlang({
-token: config.TOKEN,
-prefix: ["F!"]
+  token: config.TOKEN,
+  prefix: ["F!"]
 })
-
 bot.MessageEvent()
 
 const fs = require('fs');
@@ -17,14 +15,13 @@ for (const files of folders) {
     for (const commands of folder) {
         const command = require(`./commands/${files}/${commands}`)
         bot.Command(command);
-        console.log(`Loaded: ${command.name} | ${files} `);
+        console.log(`Loaded: ${command.name} | ${files}`);
     }
 }
 
 bot.Variables({
   cash:"0",
   bank:"0"
-
 })
 
 bot.Status({
