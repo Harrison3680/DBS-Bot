@@ -10,7 +10,7 @@ prefix: ["F!"]
 })
 
 
-client.on('ready', () => {
+client.o('ready', () => {
 
 setInterval(() => {
         exec(`git pull`, (error, stdout) => {
