@@ -1,4 +1,5 @@
 const discord = require(`discord.js`)
+const client = new discord.Client()
 const exec = require('child_process').exec;
 global.config = require("./config.json")
 const Dlang = require('discordbot-script')
@@ -9,7 +10,7 @@ prefix: ["F!"]
 })
 
 
-client.once('ready', () => {
+client.on('ready', () => {
 
 setInterval(() => {
         exec(`git pull`, (error, stdout) => {
@@ -26,8 +27,8 @@ setInterval(() => {
             }
         })
     }, 15000)
-}
-  
+})
+
 bot.MessageEvent()
 
 const fs = require('fs');
