@@ -1,3 +1,4 @@
+const discord = require(`discord.js`)
 const exec = require('child_process').exec;
 global.config = require("./config.json")
 const Dlang = require('discordbot-script')
@@ -7,8 +8,8 @@ token: config.TOKEN,
 prefix: ["F!"]
 })
 
-  
-bot.MessageEvent()
+
+client.once('ready', () => {
 
 setInterval(() => {
         exec(`git pull`, (error, stdout) => {
@@ -25,7 +26,9 @@ setInterval(() => {
             }
         })
     }, 15000)
-
+}
+  
+bot.MessageEvent()
 
 const fs = require('fs');
 const folders = fs.readdirSync("./commands/")
