@@ -10,6 +10,8 @@ module.exports = ({
     add-cash
     remove-bank
     remove-cash
-    eval`
+    eval
+    deval
+    git-pull`
 })
 
