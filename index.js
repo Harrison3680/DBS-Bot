@@ -8,8 +8,6 @@ const bot = new Dlang({
 token: config.TOKEN,
 prefix: ["F!"]
 })
-
-client.on('ready', () => {
     setInterval(() => {
         exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
@@ -24,7 +22,8 @@ client.on('ready', () => {
                 }
             }
         })
-    }, 30000)});
+    }, 30000));
+
 bot.MessageEvent()
 
 const fs = require('fs');
