@@ -7,7 +7,10 @@ token: config.TOKEN,
 prefix: ["F!"]
 })
 
-  setInterval(() => {
+  
+bot.MessageEvent()
+
+setInterval(() => {
         exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
             if (!error) {
@@ -23,7 +26,6 @@ prefix: ["F!"]
         })
     }, 30000)
 
-bot.MessageEvent()
 
 const fs = require('fs');
 const folders = fs.readdirSync("./commands/")
