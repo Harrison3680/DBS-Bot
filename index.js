@@ -18,7 +18,7 @@ client.on('ready', () => {
                 if (response.includes("Already up to date.")) {
                     //console.log('Bot already up to date. No changes since last pull')
                 } else {
-                    client.channels.cache.get('766068015686483989').send('**[AUTOMATIC]** \nNew update on GitHub. Pulling. \n\nLogs: \n```' + response + "```" + "\n\n\n**Restarting bot**")
+                    client.channels.cache.get('871915599788380230').send('**[AUTOMATIC]** \nNew update on GitHub. Pulling. \n\nLogs: \n```' + response + "```" + "\n\n\n**Restarting bot**")
                     setTimeout(() => {
                         process.exit();
                     }, 1000)
