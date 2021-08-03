@@ -21,7 +21,7 @@ prefix: ["F!"]
                 }
             }
         })
-    }, 60000)
+    }, 30000)
 
 bot.MessageEvent()
 
