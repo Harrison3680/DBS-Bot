@@ -10,7 +10,6 @@ prefix: ["F!"]
 })
 
 client.on('ready', () => {
-  //Automatic 30second git pull.
     setInterval(() => {
         exec(`git pull`, (error, stdout) => {
             let response = (error || stdout);
