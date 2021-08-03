@@ -24,7 +24,7 @@ setInterval(() => {
                 }
             }
         })
-    }, 30000)
+    }, 15000)
 
 
 const fs = require('fs');
