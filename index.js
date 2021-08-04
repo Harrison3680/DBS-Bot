@@ -38,6 +38,6 @@ bot.Status({
 bot.ReadyCommand({
 name: "858387930703724564",
 code: `
-$client[tag] has been started at $client[readyat]!
+$client[tag] has been started at $client[readyat]!`
 
 })
