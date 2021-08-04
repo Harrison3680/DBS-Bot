@@ -1,4 +1,4 @@
 module.exports = ({
 name:"ping",
-code:`$ping`  
+code:`$ping ms`   
 })  
