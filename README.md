@@ -1,2 +1,2 @@
 # DBS-Bot
-yes
+# this bot is made in db-script to be used for testing purposes
